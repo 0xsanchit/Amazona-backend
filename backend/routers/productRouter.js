@@ -20,7 +20,7 @@ productRouter.get('/:id',expressAsyncHandler(async(req,res)=>{
     if(product)
     {
         console.log(product);
-        res.send(product);
+        res.send(product[0]);
     }
     else
     {
